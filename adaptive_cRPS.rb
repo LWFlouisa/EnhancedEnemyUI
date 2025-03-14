@@ -18,7 +18,7 @@ search_limit              = remembered_player_actions.size.to_i
 
 search_limit.times do
   current_candidate == remembered_player_action[enemy_ideal_candidate]
-  current_possible_action == possible_player_actions
+  current_possible_action == possible_player_actions[cur_row][cur_col][cur_arr]
 
   if current_possible_action == current_candidate
     puts ">> Enemy found a potential candidate."
