@@ -12,7 +12,7 @@ cur_row = row_options.sample
 cur_col = col_options.sample
 cur_arr = arr_options.sample
 
-remembered_player_actions = File.readlines("lib/data/enemey/remembered_player_actions")
+remembered_player_actions = File.readlines("lib/data/enemey/remembered_player_actions.txt")
 enemy_ideal_condition     = File.read("lib/data/enemy/ideal_candidate.txt").stip.to_i
 search_limit              = remembered_player_actions.size.to_i
 
